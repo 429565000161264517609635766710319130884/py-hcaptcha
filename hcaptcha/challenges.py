@@ -1,4 +1,3 @@
-import logging
 from .curves import gen_mouse_move
 from .agents import Agent, random_agent
 from .structures import Pe, FakeTime
@@ -6,7 +5,6 @@ from .utils import gen_widget_id
 try:
     from xrequests import HttpClient
 except ImportError:
-    logging.warning("xrequests is recommended for optimal performance")
     from requests import Session as HttpClient
 from PIL import Image
 from io import BytesIO
