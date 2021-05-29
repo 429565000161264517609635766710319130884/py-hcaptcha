@@ -2,7 +2,19 @@
 Python library for interacting with hCaptcha
 
 # Solver Usage
-https://github.com/h0nde/py-hcaptcha/blob/main/gather_data.py
+Training is required for the solver to function properly. Use https://github.com/h0nde/py-hcaptcha/blob/main/gather_data.py.
+
+```python
+import hcaptcha
+
+solver = hcaptcha.Solver(data_dir="./solver-data")
+token = solver.get_token(
+    sitekey="45fbc4de-366c-40ef-9274-9f3feca1cd6c",
+    host="v3rmillion.net",
+    http_client=None)
+
+print("result:", token)
+```
 
 # Usage
 ```python
