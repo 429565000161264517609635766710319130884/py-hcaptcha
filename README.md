@@ -16,7 +16,7 @@ token = solver.get_token(
 print("result:", token)
 ```
 
-# Usage
+# Normal Usage
 ```python
 import hcaptcha
 
