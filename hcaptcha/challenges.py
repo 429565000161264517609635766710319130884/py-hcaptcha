@@ -23,7 +23,7 @@ VERIFY_BTN_POS = (314, 559)
 class Challenge:
     base_url = "https://hcaptcha.com"
 
-    def __init__(self, host, sitekey,
+    def __init__(self, sitekey, host,
                  version=None, invisible=None, widget_id=None,
                  agent=None, http_client=None):
         version = version if version is not None else "c4ed6d3"
