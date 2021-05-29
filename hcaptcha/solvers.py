@@ -25,7 +25,7 @@ class Solver:
     def hash_question(question):
         return question.split(" ")[-1].lower().strip(".,!?")
 
-    def solve(self, sitekey, host, _retry=0, **kwargs):
+    def get_token(self, sitekey, host, _retry=0, **kwargs):
         if _retry > self.max_retries:
             return
         
