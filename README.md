@@ -21,6 +21,9 @@ for key, im in ch.tasks():
 print("response:", ch.solve(answers))
 ```
 
+# Solver
+https://github.com/h0nde/py-hcaptcha/blob/main/gather_data.py
+
 # Installation
 ```bash
 pip install -U git+https://github.com/h0nde/xrequests
