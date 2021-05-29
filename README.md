@@ -2,7 +2,7 @@
 Python library for interacting with hCaptcha
 
 # Solver Usage
-Training is required for the solver to function properly. Use https://github.com/h0nde/py-hcaptcha/blob/main/gather_data.py.
+Training is required for the solver to function properly. Use https://github.com/h0nde/py-hcaptcha/blob/main/tools/gather_data.py.
 
 ```python
 import hcaptcha
