@@ -1,6 +1,9 @@
 # py-hcaptcha
 Python library for interacting with hCaptcha
 
+# Solver Usage
+https://github.com/h0nde/py-hcaptcha/blob/main/gather_data.py
+
 # Usage
 ```python
 import hcaptcha
@@ -21,9 +24,6 @@ for key, im in ch.tasks():
 token = ch.solve(answers)
 print("response:", token)
 ```
-
-# Solver
-https://github.com/h0nde/py-hcaptcha/blob/main/gather_data.py
 
 # Installation
 ```bash
