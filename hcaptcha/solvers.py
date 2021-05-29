@@ -56,7 +56,7 @@ class Solver:
                     self._confirm(im_id, id_to_im[im_id])
             return token
         
-        return self.solve(sitekey, host, _retry+1, **kwargs)
+        return self.get_token(sitekey, host, _retry+1, **kwargs)
 
     def _confirm(self, im_id, im):
         if im_id in self._confirmed:
