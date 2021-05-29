@@ -26,7 +26,7 @@ def gatherer():
                 if token:
                     print("Solved challenge!")
             except Exception as err:
-                print(f"Gatherer error: {err}!r")
+                print(f"Gatherer error: {err!r}")
                 break
 
 threads = [threading.Thread(target=gatherer)
