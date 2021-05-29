@@ -63,11 +63,6 @@ class Challenge:
 
     def solve(self, answers):
         self._simulate_solve(answers)
-
-        if 0:
-            with open("lastdata.json", "w") as fp:
-                json.dump(self._frame.get_data(), fp)
-            return
         
         resp = self.http_client.request(
             method="POST",
