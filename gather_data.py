@@ -24,7 +24,7 @@ def gatherer():
             try:
                 token = solver.get_token(sitekey, host, http_client=http)
                 if token:
-                    print("Solved challenge!")
+                    print("Solved challenge!", token)
             except Exception as err:
                 print(f"Gatherer error: {err!r}")
                 break
