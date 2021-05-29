@@ -12,7 +12,7 @@ try:
     with open("proxies.txt") as fp:
         proxies = itertools.cycle(fp.read().splitlines())
 except FileNotFoundError:
-    pass
+    print("Use of proxies is recommended. (proxies.txt)")
 
 def gatherer():
     while True:
