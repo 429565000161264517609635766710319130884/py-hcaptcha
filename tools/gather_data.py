@@ -3,16 +3,17 @@ import itertools
 import xrequests
 from hcaptcha import Solver
 
-solver = Solver(data_dir="./solver-data")
-sitekey, host = "45fbc4de-366c-40ef-9274-9f3feca1cd6c", "v3rmillion.net"
+sitekey = "45fbc4de-366c-40ef-9274-9f3feca1cd6c"
+host = "v3rmillion.net"
 thread_count = 100
-proxies = None
+solver = Solver(data_dir="./solver-data")
 
 try:
     with open("proxies.txt") as fp:
         proxies = itertools.cycle(fp.read().splitlines())
 except FileNotFoundError:
     print("Use of proxies is recommended. (proxies.txt)")
+    proxies = None
 
 def gatherer():
     while True:
