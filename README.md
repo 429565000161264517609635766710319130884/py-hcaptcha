@@ -23,6 +23,6 @@ print("response:", ch.solve(answers))
 
 # Installation
 ```bash
-pip install -U git+https://github.com/h0nde/py-xrequests
+pip install -U git+https://github.com/h0nde/xrequests
 pip install -U git+https://github.com/h0nde/py-hcaptcha
 ```
